@@ -1,0 +1,14 @@
+//Thêm vào thư viện để rút ngắn src code khi code
+// ex: ../../../src/
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~": "./src"
+        }
+      }
+    ]
+  ]
+}
