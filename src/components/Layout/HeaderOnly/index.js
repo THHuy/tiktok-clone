@@ -1,8 +1,8 @@
 //Những trang nào mặc định ko thay đổi trên web
-import Header from "./Header";
+import Header from "~/components/Layout/components/Header";
 
 //App Pages sẽ trở thành children của DefaultLayout này
-function DefaultLayout({ children }) {
+function HeaderOnly({ children }) {
   return (
     <div>
       <Header />
@@ -13,4 +13,4 @@ function DefaultLayout({ children }) {
   );
 }
 
-export default DefaultLayout;
+export default HeaderOnly;
