@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
+import Button from "~/components/Button";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
 import images from "~/assets/images";
 import styles from "./Header.module.scss";
@@ -54,7 +55,10 @@ function Header() {
             </button>
           </div>
         </Tippy>
-        <div className={cx("actions")}></div>
+        <div className={cx("actions")}>
+          <Button text>Upload</Button>
+          <Button primary>Login</Button>
+        </div>
       </div>
     </header>
   );
